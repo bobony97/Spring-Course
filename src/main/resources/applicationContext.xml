@@ -7,9 +7,17 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context-3.1.xsd ">
 
+    <!-->Creacion de la dependencia </-->
+    <!-->Indicamos el nombre de la clase que genera el informe </-->
+    <bean id="miInforme" class="es.IoC.Informe">
+
+    </bean>
+
     <!-->Generador de objetos </-->
     <!-->Con el "id" marcamos un alias, y con "class" especificamos la clase donde esta el objeto </-->
     <bean id="miEmpleado" class="es.IoC.JefeEmpleado">
 
+        <!-->Configuramos la dependencia </-->
+        <constructor-arg ref="miInforme"></constructor-arg>
     </bean>
 </beans>
