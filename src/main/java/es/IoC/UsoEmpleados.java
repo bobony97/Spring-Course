@@ -28,6 +28,7 @@ public class UsoEmpleados {
 
         //3-Utilizar el bean
         System.out.println(Juan.getTareas());
+        System.out.println(Juan.getInforme());
 
         //4-Cerrar el contexto (xml) para liberar espacio
         contexto.close();
